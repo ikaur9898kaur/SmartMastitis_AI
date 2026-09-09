@@ -1,0 +1,154 @@
+{
+  "model_name": "SmartMastitis XGBoost Classifier",
+  "version": "v1.4.2",
+  "primary_model": {
+    "algorithm": "XGBoost",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall_sensitivity": 1.0,
+    "specificity": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "true_negative": 441,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_positive": 59
+    },
+    "forecast_horizons": {
+      "seven_day_accuracy": 0.99,
+      "fourteen_day_accuracy": 0.95
+    }
+  },
+  "baseline_comparison": {
+    "logistic_regression": {
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0
+    },
+    "random_forest": {
+      "accuracy": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "surface_temperature",
+      "importance": 0.1795
+    },
+    {
+      "feature": "milk_yield_change_pct",
+      "importance": 0.1215
+    },
+    {
+      "feature": "rumination_change_pct",
+      "importance": 0.1092
+    },
+    {
+      "feature": "milk_temperature",
+      "importance": 0.1043
+    },
+    {
+      "feature": "activity",
+      "importance": 0.0988
+    },
+    {
+      "feature": "activity_change_pct",
+      "importance": 0.0914
+    },
+    {
+      "feature": "milk_ph",
+      "importance": 0.0763
+    },
+    {
+      "feature": "resting_duration",
+      "importance": 0.0538
+    },
+    {
+      "feature": "scc_change_pct",
+      "importance": 0.0514
+    },
+    {
+      "feature": "scc",
+      "importance": 0.0418
+    },
+    {
+      "feature": "rumination_minutes",
+      "importance": 0.0254
+    },
+    {
+      "feature": "conductivity_change_pct",
+      "importance": 0.0251
+    },
+    {
+      "feature": "conductivity",
+      "importance": 0.0215
+    },
+    {
+      "feature": "species_is_buffalo",
+      "importance": 0.0
+    },
+    {
+      "feature": "age_years",
+      "importance": 0.0
+    },
+    {
+      "feature": "lactation_number",
+      "importance": 0.0
+    },
+    {
+      "feature": "days_in_lactation",
+      "importance": 0.0
+    },
+    {
+      "feature": "previous_mastitis",
+      "importance": 0.0
+    },
+    {
+      "feature": "previous_mastitis_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "body_condition_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "milk_yield",
+      "importance": 0.0
+    },
+    {
+      "feature": "milk_ph_change_pct",
+      "importance": 0.0
+    },
+    {
+      "feature": "ambient_temperature",
+      "importance": 0.0
+    },
+    {
+      "feature": "humidity",
+      "importance": 0.0
+    },
+    {
+      "feature": "air_quality_index",
+      "importance": 0.0
+    },
+    {
+      "feature": "hygiene_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "housing_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "milking_hygiene_score",
+      "importance": 0.0
+    },
+    {
+      "feature": "worker_hygiene_score",
+      "importance": 0.0
+    }
+  ]
+}
