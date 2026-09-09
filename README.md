@@ -1,0 +1,1 @@
+# SmartMastitis_AI
