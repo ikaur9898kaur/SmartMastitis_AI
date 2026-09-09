@@ -26,27 +26,27 @@ Integrated AI + ML + IoT-enabled bovine mastitis predictive forecasting platform
 ## Quick Start
 
 ### 1. Backend Setup
-`ash
+```bash
 cd backend
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --host 127.0.0.1 --port 8000
-`
+```
 - Interactive API Docs (Swagger UI): http://127.0.0.1:8000/docs
 
 ### 2. Frontend Setup
-`ash
+```bash
 cd frontend
 npm install
 npm run dev -- --port 5173
-`
+```
 - Web Application: http://127.0.0.1:5173
 
 ---
 
 ## Automated Test Suite
-`ash
+```bash
 cd backend
 python -m pytest -v tests/test_api.py
-`
+```
