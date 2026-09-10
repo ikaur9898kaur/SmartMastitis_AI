@@ -15,5 +15,10 @@ class Settings(BaseModel):
     FARM_ID: str = "FARM001"
     FARM_NAME: str = "Smart Dairy Farm"
     FARM_LOCATION: str = "Punjab, India"
+    
+    ALLOWED_ORIGINS: str = os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000"
+    )
 
 settings = Settings()

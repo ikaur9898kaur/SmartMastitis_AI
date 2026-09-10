@@ -1,4 +1,10 @@
-const API_BASE = '/api';
+// Support VITE_API_URL for production (Vercel -> Render)
+// If VITE_API_URL is provided (e.g. 'https://smartmastitis-backend.onrender.com'), use it;
+// otherwise fall back to '/api' for local development with Vite dev proxy.
+const rawBase = (import.meta.env.VITE_API_URL || '').trim().replace(/\/+$/, '');
+export const API_BASE = rawBase
+  ? (rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`)
+  : '/api';
 
 export async function fetchApi<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE}${endpoint}`, {
